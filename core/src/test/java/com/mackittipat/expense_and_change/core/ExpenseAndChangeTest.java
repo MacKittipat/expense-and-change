@@ -21,7 +21,7 @@ public class ExpenseAndChangeTest {
     public void testCalculate1() {
         List<ChangeModel> changeModelList = expenseAndChange.calculate(1);
 
-        List<ChangeModel> changeModelExpectedList = new ArrayList();
+        List<ChangeModel> changeModelExpectedList = new ArrayList<ChangeModel>();
         changeModelExpectedList.add(new ChangeModel(1000, 999));
         changeModelExpectedList.add(new ChangeModel(500, 499));
         changeModelExpectedList.add(new ChangeModel(100, 99));
@@ -42,7 +42,7 @@ public class ExpenseAndChangeTest {
     public void testCalculate167() {
         List<ChangeModel> changeModelList = expenseAndChange.calculate(167);
 
-        List<ChangeModel> changeModelExpectedList = new ArrayList();
+        List<ChangeModel> changeModelExpectedList = new ArrayList<ChangeModel>();
         changeModelExpectedList.add(new ChangeModel(1000, 833));
         changeModelExpectedList.add(new ChangeModel(500, 333));
 

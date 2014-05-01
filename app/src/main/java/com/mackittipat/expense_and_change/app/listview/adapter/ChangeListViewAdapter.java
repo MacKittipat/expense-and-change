@@ -15,7 +15,7 @@ import java.util.List;
 public class ChangeListViewAdapter extends BaseAdapter {
 
     private Context context;
-    private List<ChangeModel> changeModelList = new ArrayList();
+    private List<ChangeModel> changeModelList = new ArrayList<ChangeModel>();
 
     public ChangeListViewAdapter(Context context, List<ChangeModel> changeModelList) {
         this.context = context;
