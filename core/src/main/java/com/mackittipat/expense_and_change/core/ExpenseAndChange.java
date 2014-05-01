@@ -1,6 +1,6 @@
-package com.mackittipat.expense_and_change.app.core;
+package com.mackittipat.expense_and_change.core;
 
-import com.mackittipat.expense_and_change.app.listview.model.ChangeModel;
+import com.mackittipat.expense_and_change.core.model.ChangeModel;
 
 import java.util.ArrayList;
 import java.util.List;

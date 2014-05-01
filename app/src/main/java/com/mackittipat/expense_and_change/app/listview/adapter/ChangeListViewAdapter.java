@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.mackittipat.expense_and_change.app.R;
-import com.mackittipat.expense_and_change.app.listview.model.ChangeModel;
+import com.mackittipat.expense_and_change.core.model.ChangeModel;
 
 import java.util.ArrayList;
 import java.util.List;

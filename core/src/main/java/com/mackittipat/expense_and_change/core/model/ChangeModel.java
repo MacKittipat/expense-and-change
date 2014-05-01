@@ -1,4 +1,4 @@
-package com.mackittipat.expense_and_change.app.listview.model;
+package com.mackittipat.expense_and_change.core.model;
 
 public class ChangeModel {
 

@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 import com.mackittipat.expense_and_change.app.listview.adapter.ChangeListViewAdapter;
-import com.mackittipat.expense_and_change.app.listview.model.ChangeModel;
+import com.mackittipat.expense_and_change.core.model.ChangeModel;
 
 import java.util.ArrayList;
 import java.util.List;
