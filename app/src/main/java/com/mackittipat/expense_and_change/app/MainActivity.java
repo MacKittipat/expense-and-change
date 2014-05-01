@@ -1,11 +1,16 @@
 package com.mackittipat.expense_and_change.app;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
+
+    public static final String EXPENSE = "com.mackittipat.expense_and_change.app.expense";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +18,20 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
     }
 
+    public void onClickBtnCalculate(View view) {
+        Intent intent = new Intent(this, ResultActivity.class);
+
+        EditText eTextTotalExpense = (EditText) findViewById(R.id.etxt_total_expense);
+        EditText eTextNumPeople = (EditText) findViewById(R.id.etxt_num_people);
+
+        long expense = (long) Math.ceil(
+                Double.parseDouble(eTextTotalExpense.getText().toString()) /
+                        Double.parseDouble(eTextNumPeople.getText().toString()));
+
+        intent.putExtra(EXPENSE, expense);
+
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,5 +52,4 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
