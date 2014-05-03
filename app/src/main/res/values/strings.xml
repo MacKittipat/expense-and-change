@@ -6,5 +6,6 @@
     <string name="total_expense">Total expense</string>
     <string name="num_people">Number of people</string>
     <string name="calculate">Calculate</string>
+    <string name="expense">Expense</string>
 
 </resources>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 import com.mackittipat.expense_and_change.app.listview.adapter.ChangeListViewAdapter;
 import com.mackittipat.expense_and_change.core.ExpenseAndChange;
 import com.mackittipat.expense_and_change.core.model.ChangeModel;
@@ -20,9 +21,13 @@ public class ResultActivity extends Activity {
         Intent intent = getIntent();
         long expense = intent.getLongExtra(MainActivity.EXPENSE, 0);
 
+        // Display expense.
+        TextView txtViewExpense = (TextView) findViewById(R.id.txtv_expense);
+        txtViewExpense.setText(Long.toString(expense));
+
+        // Display possible expense and change.
         ExpenseAndChange expenseAndChange = new ExpenseAndChange();
         List<ChangeModel> changeModelList = expenseAndChange.calculate(expense);
-
         ChangeListViewAdapter changeListViewAdapter = new ChangeListViewAdapter(this, changeModelList);
         ListView listViewChange = (ListView) findViewById(R.id.lview_result);
         listViewChange.setAdapter(changeListViewAdapter);
