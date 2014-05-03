@@ -26,7 +26,6 @@ public class ExpenseAndChangeTest {
         changeModelExpectedList.add(new ChangeModel(500, 499));
         changeModelExpectedList.add(new ChangeModel(100, 99));
         changeModelExpectedList.add(new ChangeModel(50, 49));
-        changeModelExpectedList.add(new ChangeModel(40, 39));
         changeModelExpectedList.add(new ChangeModel(20, 19));
         changeModelExpectedList.add(new ChangeModel(10, 9));
         changeModelExpectedList.add(new ChangeModel(5, 4));

@@ -11,7 +11,7 @@ public class ExpenseAndChange {
 
     public static final Logger log = LoggerFactory.getLogger(ExpenseAndChange.class);
 
-    long[] thaiMonies = new long[] {1000, 500, 100, 50, 40, 20, 10, 5, 1};
+    long[] thaiMonies = new long[] {1000, 500, 100, 50, 20, 10, 5, 1};
 
     public List<ChangeModel> calculate(long expense) {
 
