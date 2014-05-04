@@ -24,6 +24,10 @@ public class MainActivity extends Activity {
         EditText eTextTotalExpense = (EditText) findViewById(R.id.etxt_total_expense);
         EditText eTextNumPeople = (EditText) findViewById(R.id.etxt_num_people);
 
+        if(validateForm(eTextTotalExpense, eTextNumPeople) == false) {
+            return;
+        }
+
         long expense = (long) Math.ceil(
                 Double.parseDouble(eTextTotalExpense.getText().toString()) /
                         Double.parseDouble(eTextNumPeople.getText().toString()));
@@ -51,5 +55,23 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private boolean validateForm(EditText eTextTotalExpense, EditText eTextNumPeople ) {
+        boolean validateSuccess = true;
+        if(eTextTotalExpense.getText().toString().length() == 0) {
+            eTextTotalExpense.setError(getString(R.string.total_expense_required));
+            validateSuccess = false;
+        }
+        if(eTextNumPeople.getText().toString().length() == 0) {
+            eTextNumPeople.setError(getString(R.string.num_people_required));
+            validateSuccess = false;
+        }
+        if(eTextNumPeople.getText().toString().length() > 0 &&
+                Long.parseLong(eTextNumPeople.getText().toString()) == 0) {
+            eTextNumPeople.setError(getString(R.string.num_people_zero));
+            validateSuccess = false;
+        }
+        return validateSuccess;
     }
 }

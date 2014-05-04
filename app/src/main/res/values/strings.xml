@@ -7,5 +7,8 @@
     <string name="num_people">Number of people</string>
     <string name="calculate">Calculate</string>
     <string name="expense">Expense</string>
+    <string name="total_expense_required">Please enter Total expense</string>
+    <string name="num_people_required">Please enter Number of people</string>
+    <string name="num_people_zero">Number of people must be more than zero</string>
 
 </resources>
