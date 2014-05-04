@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.mackittipat.expense_and_change.app" >
 
-    <uses-sdk android:minSdkVersion="19" android:maxSdkVersion="19" android:targetSdkVersion="19" />
-
     <application android:allowBackup="true"
                  android:icon="@drawable/ic_launcher"
                  android:label="@string/app_name"

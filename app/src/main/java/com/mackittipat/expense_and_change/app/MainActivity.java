@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         EditText eTextTotalExpense = (EditText) findViewById(R.id.etxt_total_expense);
         EditText eTextNumPeople = (EditText) findViewById(R.id.etxt_num_people);
 
-        if(validateForm(eTextTotalExpense, eTextNumPeople) == false) {
+        if(!validateForm(eTextTotalExpense, eTextNumPeople)) {
             return;
         }
 
@@ -57,6 +57,11 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * @param eTextNumPeople
+     * @param eTextTotalExpense
+     * @return true if validate success, otherwise false.
+     */
     private boolean validateForm(EditText eTextTotalExpense, EditText eTextNumPeople ) {
         boolean validateSuccess = true;
         if(eTextTotalExpense.getText().toString().length() == 0) {

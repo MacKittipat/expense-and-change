@@ -9,9 +9,9 @@ import java.util.List;
 
 public class ExpenseAndChange {
 
-    public static final Logger log = LoggerFactory.getLogger(ExpenseAndChange.class);
+    private static final Logger log = LoggerFactory.getLogger(ExpenseAndChange.class);
 
-    long[] coinAndPapers = new long[] {2, 5, 10, 20, 50, 100, 500, 1000};
+    private static final long[] coinAndPapers = new long[] {2, 5, 10, 20, 50, 100, 500, 1000};
 
     /**
      * Calculate possible expense and change.
