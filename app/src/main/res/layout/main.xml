@@ -16,7 +16,8 @@
                   android:id="@+id/etxt_total_expense"
                   android:hint="@string/total_expense"
                   android:inputType="number"
-                  android:singleLine="true"/>
+                  android:singleLine="true"
+                  android:textSize="@dimen/font_size"/>
     </LinearLayout>
 
     <LinearLayout android:layout_width="match_parent"
@@ -27,7 +28,8 @@
                   android:id="@+id/etxt_num_people"
                   android:hint="@string/num_people"
                   android:inputType="number"
-                  android:singleLine="true"/>
+                  android:singleLine="true"
+                  android:textSize="@dimen/font_size"/>
     </LinearLayout>
 
     <LinearLayout android:layout_width="match_parent"
@@ -35,7 +37,8 @@
         <Button android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/calculate"
-                android:onClick="onClickBtnCalculate"/>
+                android:onClick="onClickBtnCalculate"
+                android:textSize="@dimen/font_size"/>
     </LinearLayout>
 
 </LinearLayout>
